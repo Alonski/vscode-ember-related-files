@@ -49,10 +49,14 @@ export function activate(context: vscode.ExtensionContext) {
       return
     }
 
-    const relativeFileName = vscode.workspace.asRelativePath(vscode.window.activeTextEditor.document.fileName)
-
-    const items = findRelatedFiles(vscode.workspace.rootPath, relativeFileName)
-      .map((item) => new TypeItem(item))
+    let relativeFileName = vscode.workspace.asRelativePath(vscode.window.activeTextEditor.document.fileName);
+    let rootPath = vscode.workspace.rootPath;
+    if (path_1.sep === '\\') {
+        relativeFileName = relativeFileName.replace(/\\/g, "\/");
+        rootPath = rootPath.replace(/\\/g, "\/");
+    }
+    const items = findRelatedFiles(rootPath, relativeFileName)
+        .map((item) => new TypeItem(item));
 
     if (items.length === 0) { return; }
 
