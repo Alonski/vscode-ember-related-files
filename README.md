@@ -5,7 +5,8 @@
 ## Default keybinding
 
 - **Mac**: <kbd>`alt`</kbd> + <kbd>`cmd`</kbd> + <kbd>`r`</kbd>
-- **Win/Linux**: <kbd>`alt`</kbd> + <kbd>`r`</kbd> + <kbd>`f`</kbd>
+- **Win**: <kbd>`ctrl`</kbd> + <kbd>`'`</kbd>
+- **Linux**: <kbd>`alt`</kbd> + <kbd>`r`</kbd> + <kbd>`f`</kbd>
 
 ## License
 
