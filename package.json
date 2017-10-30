@@ -1,17 +1,17 @@
 {
-    "name": "ember-related-files",
-    "displayName": "Ember Related Files",
+    "name": "ember-related-files-windows",
+    "displayName": "Ember Related Files - Windows Fix",
     "description": "",
     "version": "1.1.0",
-    "publisher": "josa",
+    "publisher": "Alonski",
     "license": "MIT",
-    "homepage": "https://github.com/josa42/vscode-ember-related-files",
+    "homepage": "https://github.com/Alonski/vscode-ember-related-files",
     "repository": {
         "type": "git",
-        "url": "https://github.com/josa42/vscode-ember-related-files.git"
+        "url": "https://github.com/Alonski/vscode-ember-related-files.git"
     },
     "bugs": {
-        "url": "https://github.com/josa42/vscode-ember-related-files/issues"
+        "url": "https://github.com/Alonski/vscode-ember-related-files/issues"
     },
     "engines": {
         "vscode": "^1.5.0"
@@ -37,7 +37,7 @@
         ],
         "configuration": {
             "type": "object",
-            "title": "Ember Related Files",
+            "title": "Ember Related Files - Windows Fix",
             "properties": {
                 "emberRelatedFiles.showQuickPickForSingleOption": {
                     "type": "boolean",
@@ -49,7 +49,7 @@
         "keybindings": [
             {
                 "mac": "cmd+alt+r",
-                "win": "ctrl+alt+r",
+                "win": "alt+r+f",
                 "linux": "ctrl+alt+r",
                 "key": "ctrl+alt+r",
                 "command": "extension.relatedFiles"
