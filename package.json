@@ -1,7 +1,7 @@
 {
     "name": "ember-related-files-windows",
     "displayName": "Ember Related Files - Windows Fix",
-    "description": "",
+    "description": "Quickly GoTo Ember Related Files",
     "version": "1.1.0",
     "publisher": "Alonski",
     "license": "MIT",
@@ -25,21 +25,21 @@
         "theme": "light"
     },
     "activationEvents": [
-        "onCommand:extension.relatedFiles"
+        "onCommand:extension.emberRelatedFilesWindows"
     ],
     "main": "./out/src/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.relatedFiles",
-                "title": "Related Files"
+                "command": "extension.emberRelatedFilesWindows",
+                "title": "Ember Related Files"
             }
         ],
         "configuration": {
             "type": "object",
             "title": "Ember Related Files - Windows Fix",
             "properties": {
-                "emberRelatedFiles.showQuickPickForSingleOption": {
+                "emberRelatedFilesWindows.showQuickPickForSingleOption": {
                     "type": "boolean",
                     "default": false,
                     "description": "Show pick pick list event if only one option is available."
@@ -49,10 +49,10 @@
         "keybindings": [
             {
                 "mac": "cmd+alt+r",
-                "win": "alt+r+f",
+                "win": "ctrl+'",
                 "linux": "ctrl+alt+r",
                 "key": "ctrl+alt+r",
-                "command": "extension.relatedFiles"
+                "command": "extension.emberRelatedFilesWindows"
             }
         ]
     },

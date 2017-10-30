@@ -40,11 +40,11 @@ function open(item: TypeItem) {
 }
 
 function config<T>(key: string) : T {
-  return vscode.workspace.getConfiguration('emberRelatedFiles').get<T>(key);
+  return vscode.workspace.getConfiguration('emberRelatedFilesWindows').get<T>(key);
 }
 
 export function activate(context: vscode.ExtensionContext) {
-  let disposable = vscode.commands.registerCommand('extension.relatedFiles', () => {
+  let disposable = vscode.commands.registerCommand('extension.emberRelatedFilesWindows', () => {
     if (!vscode.window.activeTextEditor) {
       return
     }
