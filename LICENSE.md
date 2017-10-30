@@ -1,4 +1,4 @@
-Copyright (c) 2017 Josa Gesell
+Copyright (c) 2017 Alon Bukai
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
